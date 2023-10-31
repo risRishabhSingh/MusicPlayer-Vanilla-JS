@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="back_icon">
+                <i class="fa-solid fa-arrow-left" id="back_button"></i>
+            </div>
+            <div class="explore_icon">
+                <i class="fa-solid fa-bars" id="explore_button"></i>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="image.jpg" class="imagepic" id="musicimage">
+        </div>
+        <div class="MusicName">
+            <h2>Round & Round</h2>
+            <p>By Saumya Singh</p>
+        </div>
+        <audio id="song">
+        </audio>
+        <div class="playbar">
+            <input type="range" id="progress">
+        </div>
+        <div class="control_button">
+            <div class="prev_song"><i class="fa-solid fa-backward-step"></i></div>
+            <div class="backward_button"><i class="fa-solid fa-backward"></i></div>
+            <div class="play_button"><i class="fa-solid fa-play" id="ctrlplaynpause"></i></div>
+            <div class="Forward_button"><i class="fa-solid fa-forward"></i></div>
+            <div class="next_song"><i class="fa-solid fa-forward-step"></i></div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h2 id="headline">Songs</h2>
+        <div class="box">
+            <ul>
+                <li>How You Remind Me <span>By Nickelback</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Go Home <span>By Adelen</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>deep-future-garage <span>By Unkown</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>leonell-cassio-the-paranormal-is-real <span>By Carrie</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>the-best-jazz-club-in-new-orleans <span>By Unkown</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Ik Vaari Aa <span>By Arijit Singh</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Baat Ban Jaye <span>By Unkown</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Phir Bhi Tumko Chahunga <span>By Arijit Singh</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Socha Hai <span>By Jubin</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Baarish <span>By Atif Aslam</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Bom Diggy <span>By Zack Knight</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Daav Laga <span>By Unkown</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Little Bad Girl <span>By David_Guetta ft Taio Cruz and Ludacris</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Deewana Kar Raha Hai <span>By Unkown</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Dekha Hazaro Dafaa <span>By Unkown</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Desi Thumka <span>By  Nouman Khalid ft. OCL Garish</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Down <span>By Jay Sean</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>I Like It <span>By Enrique Iglesias</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Dirty Dancer <span>By Enrique Iglesias, Usherft. Lil Wayne</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>In The End <span>By Linkin Park</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Kehta Hai Pal Pal <span>By Armaan Malik</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Lets Celebrate <span>By Imran Khan</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Linkin Park New Divide <span>By Linkin Park</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Despacito <span>By Luis Fonsi ft Daddy Yankee</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Mercy <span>By Unkown</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>What I have done <span>By Linkin Park</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Naah <span>By Harrdy Sandhu</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Rain Over <span>By Pitbull ft Marc Anthony</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Qismat <span>By Unkown</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Rockabye_Clean_Bandit <span>By Sean Paul</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Suit Suit <span>By Arjun</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+                <li>Sun Re Sajaniya <span>By Ali Zafar</span><span id="smallicon"><i class="fa-solid fa-circle-play"></i></span></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
